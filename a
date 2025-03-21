@@ -1,9 +1,23 @@
+# Create a README file (if not already created)
 echo "# getparleypicz" >> README.md
+
+# Initialize a new Git repository (if not already initialized)
 git init
-git add README.md
-git commit -m "first commit"
+
+# Create and switch to the main branch
 git branch -M main
+
+# Add the remote GitHub repository (skip if already added)
 git remote add origin https://github.com/AYEETRISS/getparleypicz.git
-git add public
-git commit -m "Create public directory for deployment"
-git push origin main
+
+# Ensure the 'public' directory exists
+mkdir -p public
+
+# Add all files to staging
+git add .
+
+# Commit the changes with a meaningful message
+git commit -m "Initial commit with public directory for Netlify deployment"
+
+# Push the committed changes to GitHub
+git push -u origin main
