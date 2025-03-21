@@ -21,3 +21,6 @@ git commit -m "Initial commit with public directory for Netlify deployment"
 
 # Push the committed changes to GitHub
 git push -u origin main
+git add .
+git commit -m "Fix public directory issue"
+git push origin main
